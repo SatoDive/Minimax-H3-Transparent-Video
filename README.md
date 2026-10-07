@@ -11,7 +11,7 @@
   <a href="https://www.patreon.com/SatoDive"><img alt="Patreon" src="https://img.shields.io/badge/Patreon-SatoDive-f96854"></a>
 </p>
 
-Generate directly from text, image-to-video (first/last frame), or reference images over a flat backdrop, and the Studio turns it into a clean transparent video. One generation, one node, no two-pass tricks.
+Generate directly from text, image-to-video, or reference images over a flat backdrop, and the Studio turns it into a clean transparent video. One generation, one node, no two-pass tricks.
 
 ## Features
 
@@ -36,8 +36,6 @@ Generate directly from text, image-to-video (first/last frame), or reference ima
 | `H3_Generate_Transparent_Clip.json` | **H3 Shot** → Sampler → VAE Decode → **H3 Transparent Video**, audio included. Frames pass directly from the VAE into the Studio with no intermediate MP4 compression loss. |
 
 The workflow uses native nodes alongside H3 Shot: `UNETLoader` → `ModelSamplingMiniMaxH3` (6 / 3) → `LoraLoaderModelOnly` (turbo, 0.8), `CLIPLoader` (type *minimax*), two `VAELoader`s, **H3 Shot** (864×480, 5 s = 124 frames), `KSamplerSelect` (*res_multistep*), `BasicScheduler` (*simple*, 7 steps), `RandomNoise`, `BasicGuider`, `SamplerCustomAdvanced`, `VAEDecode`, `VAEDecodeAudio`. *(Without a turbo LoRA, bypass it and use ~20 steps).*
-
-<p align="center"><img src="docs/workflow_02.jpg" width="860"></p>
 
 **Importing:** 
 - **Premiere / After Effects / DaVinci Resolve:** Import the `.mov` directly; alpha is automatically recognized as *straight*.
