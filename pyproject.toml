@@ -12,4 +12,3 @@ Repository = "https://github.com/SatoDive/Minimax-H3-Transparent-Video"
 [tool.comfy]
 PublisherId = "satodive-comfy"
 DisplayName = "MiniMax H3 Transparent Video - SatoDive"
-Icon = "" # Optional: URL to icon (max 800x400)
