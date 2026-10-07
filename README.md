@@ -33,7 +33,7 @@ Generate directly from text, image-to-video, or reference images over a flat bac
 
 1. Copy the `ComfyUI-H3-TransparentVideo-SatoDive` folder into `ComfyUI/custom_nodes/`.
 2. Restart ComfyUI. No extra Python packages needed: it uses `torch`, `PyAV`, `numpy`, and `Pillow`, which are already bundled with ComfyUI.
-3. Load a workflow from `workflows/`.
+3. Load a workflow from `workflows/` or grab the workflow on [Patreon](https://www.patreon.com/SatoDive/posts/make-easy-videos-171699610).
 
 **Requirements:** A ComfyUI version recent enough to include native MiniMax H3 nodes, and this pack. Nothing else.
 
@@ -42,6 +42,8 @@ Generate directly from text, image-to-video, or reference images over a flat bac
 | File | What it does |
 |---|---|
 | `H3_Generate_Transparent_Clip.json` | **H3 Shot** → Sampler → VAE Decode → **H3 Transparent Video**, audio included. Frames pass directly from the VAE into the Studio with no intermediate MP4 compression loss. |
+
+> 📥 **Download Workflow:** Get the ready-to-use workflow on Patreon: [Make Easy Videos (H3 Transparent Video)](https://www.patreon.com/SatoDive/posts/make-easy-videos-171699610)
 
 The workflow uses native nodes alongside H3 Shot: `UNETLoader` → `ModelSamplingMiniMaxH3` (6 / 3) → `LoraLoaderModelOnly` (turbo, 0.8), `CLIPLoader` (type *minimax*), two `VAELoader`s, **H3 Shot** (864×480, 5 s = 124 frames), `KSamplerSelect` (*res_multistep*), `BasicScheduler` (*simple*, 7 steps), `RandomNoise`, `BasicGuider`, `SamplerCustomAdvanced`, `VAEDecode`, `VAEDecodeAudio`. *(Without a turbo LoRA, bypass it and use ~20 steps).*
 
@@ -59,4 +61,5 @@ The workflow uses native nodes alongside H3 Shot: `UNETLoader` → `ModelSamplin
 
 ## Support & credits
 
-Made by **SatoDive**: [YouTube](https://www.youtube.com/@SatoDive) · [Patreon](https://www.patreon.com/SatoDive)
+Made by **SatoDive**: [YouTube](https://www.youtube.com/@SatoDive) · [Patreon](https://www.patreon.com/SatoDive)  
+Get the full workflow & assets: [Patreon Workflow Post](https://www.patreon.com/SatoDive/posts/make-easy-videos-171699610)
