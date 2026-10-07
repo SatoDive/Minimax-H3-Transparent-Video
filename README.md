@@ -11,6 +11,14 @@
   <a href="https://www.patreon.com/SatoDive"><img alt="Patreon" src="https://img.shields.io/badge/Patreon-SatoDive-f96854"></a>
 </p>
 
+<p align="center">
+  <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID">
+    <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg" alt="Watch the Tutorial on YouTube" width="85%">
+  </a>
+  <br>
+  <i>▶️ Click the preview above to watch the full tutorial and breakdown on YouTube</i>
+</p>
+
 Generate directly from text, image-to-video, or reference images over a flat backdrop, and the Studio turns it into a clean transparent video. One generation, one node, no two-pass tricks.
 
 ## Features
