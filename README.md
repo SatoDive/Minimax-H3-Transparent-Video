@@ -12,8 +12,8 @@
 </p>
 
 <p align="center">
-  <a href="https://www.youtube.com/watch?v=YOUR_VIDEO_ID">
-    <img src="https://img.youtube.com/vi/YOUR_VIDEO_ID/maxresdefault.jpg" alt="Watch the Tutorial on YouTube" width="85%">
+  <a href="https://www.youtube.com/watch?v=4L4lTf_NCSg">
+    <img src="https://img.youtube.com/vi/4L4lTf_NCSg/maxresdefault.jpg" alt="Watch the Tutorial on YouTube" width="85%">
   </a>
   <br>
   <i>▶️ Click the preview above to watch the full tutorial and breakdown on YouTube</i>
