@@ -1,0 +1,11 @@
+[project]
+name = "comfyui-h3-transparentvideo-satodive"
+description = "[PRO] H3 Transparent Video - SatoDive: transparent video (ProRes 4444 / RGBA PNG) from MiniMax H3 generations, in one ComfyUI node."
+version = "1.4.0"
+license = { file = "LICENSE" }
+dependencies = []
+
+[tool.comfy]
+PublisherId = "satodive"
+DisplayName = "H3 Transparent Video - SatoDive"
+Icon = ""
