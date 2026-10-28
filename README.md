@@ -61,5 +61,5 @@ The workflow uses native nodes alongside H3 Shot: `UNETLoader` → `ModelSamplin
 
 ## Support & credits
 
-Made by **SatoDive**: [YouTube](https://www.youtube.com/@SatoDive) · [Patreon](https://www.patreon.com/SatoDive)  
+Made by **SatoDive**: [YouTube](https://www.youtube.com/@SatoDive) · 
 Get the full workflow & assets: [Patreon Workflow Post](https://www.patreon.com/SatoDive/posts/make-easy-videos-171699610)
